@@ -40,6 +40,9 @@ a:hover{text-decoration: none; cursor:pointer;}
 
 /* Sizes */
 
+.bloc-xl{
+	padding:150px 20px;
+}
 .bloc-lg{
 	padding:100px 20px;
 }
@@ -76,6 +79,20 @@ a:hover{text-decoration: none; cursor:pointer;}
 }
 .bloc-fill-screen .fill-bloc-bottom-edge{
 	align-self: flex-end;
+}
+
+
+/* Background Styles */
+
+.bg-center,.bg-l-edge,.bg-r-edge,.bg-t-edge,.bg-b-edge,.bg-tl-edge,.bg-bl-edge,.bg-tr-edge,.bg-br-edge,.bg-repeat{
+	-webkit-background-size: auto!important;
+	-moz-background-size: auto!important;
+	-o-background-size: auto!important;
+	background-size: auto!important;
+}
+.bg-br-edge{
+	background-position: bottom right!important;
+	background-repeat: no-repeat;
 }
 
 
@@ -250,6 +267,9 @@ a:hover{text-decoration: none; cursor:pointer;}
 /* = Bric adjustment margins
 -------------------------------------------------------------- */
 
+.mg-clear{
+	margin:0;
+}
 .mg-sm{
 	margin-top:10px;
 	margin-bottom:5px;
@@ -257,6 +277,18 @@ a:hover{text-decoration: none; cursor:pointer;}
 .mg-md{
 	margin-top:10px;
 	margin-bottom:20px;
+}
+img.mg-sm,img.mg-md,img.mg-lg{
+	margin-top: 0;
+}
+img.mg-sm{
+	margin-bottom:10px;
+}
+img.mg-md{
+	margin-bottom:30px;
+}
+img.mg-lg{
+	margin-bottom:50px;
 }
 
 /* = Buttons
@@ -521,6 +553,43 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .page-preloader{
 	background-color:#000000;
 }
+.h3-style{
+	font-size:24px;
+}
+.sports-box{
+	border-style:_popUpItemAction:;
+	box-shadow:0px 0px 28px rgba(255,255,255,0.10);
+	border-color:#D5D5D5!important;
+	text-shadow:0px 0px 0px #000000;
+	text-align:center;
+	text-transform:uppercase;
+	height:195px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	float:left;
+	bottom:10px;
+	right:0px;
+	margin:auto 0px auto 0px;
+	padding:0px 0px 0px 0px;
+}
+.sports-box:hover{
+	border-style:solid;
+	border-color:#941100!important;
+	border-width:2px 2px 2px 2px;
+}
+.img_padding{
+	display:flex;
+	padding-bottom:10px;
+	padding-top:30px;
+}
+.illustration-section-title{
+	font-size:55px;
+}
+.h3-bloc-1-style{
+	font-size:20px;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
@@ -529,6 +598,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 .bgc-black{
 	background-color:#000000;
+}
+.bgc-white{
+	background-color:#FFFFFF;
 }
 
 /* Text colour styles */
@@ -539,7 +611,27 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .tc-white-2{
 	color:#FFFFFF!important;
 }
+.tc-prussian-blue{
+	color:#183A56!important;
+}
+.tc-ucla-blue{
+	color:#577592!important;
+}
+.tc-black{
+	color:#000000!important;
+}
 .tc-white-3{
+	color:#FFFFFF!important;
+}
+
+/* Button colour styles */
+
+.btn-ou-crimson-red{
+	background:#941100;
+	color:#FFFFFF!important;
+}
+.btn-ou-crimson-red:hover{
+	background:#760e00!important;
 	color:#FFFFFF!important;
 }
 
@@ -668,6 +760,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	.pricingcolumn{
 		margin:10px 10px 10px 10px;
 	}
+	.sports-box{
+		margin:10px 10px 10px 10px;
+	}
 	
 	/* MD Row Margin Offsets */
 	.voffset-md{
@@ -692,6 +787,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 		margin-bottom:30px;
 	}
 	.pricingcolumn{
+		margin-bottom:15px;
+	}
+	.sports-box{
 		margin-bottom:15px;
 	}
 	
@@ -727,6 +825,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 		margin-bottom:30px;
 	}
 	.pricingcolumn{
+		margin-bottom:15px;
+	}
+	.sports-box{
 		margin-bottom:15px;
 	}
 	
