@@ -319,6 +319,9 @@ button{
 .icon-md{
 	font-size:30px!important;
 }
+.icon-lg{
+	font-size:60px!important;
+}
 
 
 
@@ -590,6 +593,37 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .h3-bloc-1-style{
 	font-size:20px;
 }
+.services{
+	text-align:center;
+	display:flex;
+	flex-wrap:nowrap;
+	align-content:center;
+	flex-direction:column;
+	align-items:baseline;
+	border-style:solid;
+	height:445px;
+	justify-content:center;
+	margin-left:15px;
+	margin-right:0px;
+	color:#FEFFFF!important;
+	background-color:#929292;
+	background-attachment:initial;
+	border-width:1px 1px 1px 1px;
+}
+.services:hover{
+	color:#941100!important;
+	background-size:cover;
+	background-color:#929292;
+	background-image:url("img/afl-3395694_1280.webp");
+	background-repeat:no-repeat;
+	opacity:1;
+}
+.black-font{
+	color:#000000!important;
+}
+.white-font{
+	color:#FEFFFF!important;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
@@ -598,6 +632,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 .bgc-black{
 	background-color:#000000;
+}
+.bgc-platinum{
+	background-color:#EAEAEA;
 }
 .bgc-white{
 	background-color:#FFFFFF;
@@ -658,6 +695,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .bg-afl-3395694-1280{
 	background-image:url("img/afl-3395694_1280.webp");
+}
+.bg-studio12{
+	background-image:url("img/studio12.png");
 }
 
 
