@@ -225,9 +225,6 @@ a:hover{text-decoration: none; cursor:pointer;}
 .voffset{
 	margin-top:30px;
 }
-.voffset-md{
-	margin-top:50px;
-}
 
 
 /* = NavBar
@@ -278,18 +275,6 @@ a:hover{text-decoration: none; cursor:pointer;}
 	margin-top:10px;
 	margin-bottom:20px;
 }
-img.mg-sm,img.mg-md,img.mg-lg{
-	margin-top: 0;
-}
-img.mg-sm{
-	margin-bottom:10px;
-}
-img.mg-md{
-	margin-bottom:30px;
-}
-img.mg-lg{
-	margin-bottom:50px;
-}
 
 /* = Buttons
 -------------------------------------------------------------- */
@@ -322,8 +307,16 @@ button{
 .icon-lg{
 	font-size:60px!important;
 }
+.icon-xl{
+	font-size:100px!important;
+}
 
 
+/* = Text & Icon Styles
+-------------------------------------------------------------- */
+.lg-shadow{
+	text-shadow:0 2px 5px rgba(0,0,0,.5);
+}
 
 
 /* = Cards
@@ -602,11 +595,11 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	align-items:baseline;
 	border-style:solid;
 	height:445px;
-	justify-content:center;
+	justify-content:space-around;
 	margin-left:15px;
 	margin-right:0px;
 	color:#FEFFFF!important;
-	background-color:#929292;
+	background-color:#212121;
 	background-attachment:initial;
 	border-width:1px 1px 1px 1px;
 }
@@ -623,6 +616,14 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .white-font{
 	color:#FEFFFF!important;
+}
+.icon-padding{
+	display:flex;
+	align-items:stretch;
+	justify-content:space-around;
+	flex-wrap:wrap-reverse;
+	align-content:space-around;
+	flex-direction:row-reverse;
 }
 
 /* = Colour
@@ -683,6 +684,10 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 /* Icon colour styles */
 
+.icon-white{
+	color:#FFFFFF!important;
+	border-color:#FFFFFF!important;
+}
 .icon-ou-crimson-red{
 	color:#941100!important;
 	border-color:#941100!important;
@@ -692,12 +697,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 .bg-istockphoto-481376585-612x612{
 	background-image:url("img/istockphoto-481376585-612x612.jpg");
-}
-.bg-afl-3395694-1280{
-	background-image:url("img/afl-3395694_1280.webp");
-}
-.bg-studio12{
-	background-image:url("img/studio12.png");
 }
 
 
@@ -804,11 +803,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 		margin:10px 10px 10px 10px;
 	}
 	
-	/* MD Row Margin Offsets */
-	.voffset-md{
-		margin-top:30px;
-	}
-	
 }
 
 @media (max-width: 767px){
@@ -831,11 +825,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	}
 	.sports-box{
 		margin-bottom:15px;
-	}
-	
-	/* Small Row Margin Offsets */
-	.voffset-sm{
-		margin-top:30px;
 	}
 	
 }
@@ -869,11 +858,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	}
 	.sports-box{
 		margin-bottom:15px;
-	}
-	
-	/* Mobile Row Margin Offsets */
-	.voffset-xs{
-		margin-top:30px;
 	}
 	
 }
