@@ -7637,8 +7637,6 @@ module.exports = __webpack_require__(325);
 
 var Webflow = __webpack_require__(4);
 
-  return api;
-
 /***/ }),
 /* 122 */
 /***/ (function(module, exports, __webpack_require__) {
