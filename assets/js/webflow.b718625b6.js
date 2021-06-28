@@ -7637,16 +7637,6 @@ module.exports = __webpack_require__(325);
 
 var Webflow = __webpack_require__(4);
 
-Webflow.define('brand', module.exports = function ($) {
-  var api = {};
-  var doc = document;
-  var $html = $('html');
-  var $body = $('body');
-  var namespace = '.w-webflow-badge';
-  var location = window.location;
-  var isPhantom = /PhantomJS/i.test(navigator.userAgent);
-  var fullScreenEvents = 'fullscreenchange webkitfullscreenchange mozfullscreenchange msfullscreenchange';
-
   return api;
 });
 
