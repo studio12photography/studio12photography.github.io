@@ -893,7 +893,38 @@
     }, a.extend(o.triggers, s), t.exports = o
 }, function(t, e, n) {
     n(5), n(8), n(9), n(10), n(11), n(12), n(17), t.exports = n(19)
+}, function(t, e, n) {
+    "use strict";
+    var i = n(0);
+    i.define("brand", t.exports = function(t) {
+        var e, n = {},
+            r = document,
+            a = t("html"),
+            o = t("body"),
+            u = window.location,
+            c = /PhantomJS/i.test(navigator.userAgent),
+            l = "fullscreenchange webkitfullscreenchange mozfullscreenchange msfullscreenchange";
 
+        function f() {
+            var n = r.fullScreen || r.mozFullScreen || r.webkitIsFullScreen || r.msFullscreenElement || Boolean(r.webkitFullscreenElement);
+            t(e).attr("style", n ? "display: none !important;" : "")
+        }
+
+        function d() {
+            var t = o.children(s),
+                n = t.length && t.get(0) === e,
+                r = i.env("editor");
+            n ? r && t.remove() : (t.length && t.remove(), r || o.append(e))
+        }
+        return n.ready = function() {
+            var n, i, o, s = a.attr("data-wf-status"),
+                h = a.attr("data-wf-domain") || "";
+            /\.webflow\.io$/i.test(h) && u.hostname !== h && (s = !0), s && !c && (e = e || (n = t('<a class="w-webflow-badge"></a>').attr("href", "https://webflow.com?utm_campaign=brandjs"), i = t("<img>").attr("src", "https://d3e54v103j8qbb.cloudfront.net/img/webflow-badge-icon.f67cd735e3.svg").attr("alt", "").css({
+                marginRight: "8px",
+                width: "16px"
+            }), o = t("<img>").attr("src", "https://d1otoma47x30pg.cloudfront.net/img/webflow-badge-text.6faa6a38cd.svg").attr("alt", "Made in Webflow"), n.append(i, o), n[0]), d(), setTimeout(d, 500), t(r).off(l, f).on(l, f))
+        }, n
+    })
 }, function(t, e, n) {
     "use strict";
     var i = window.$,
