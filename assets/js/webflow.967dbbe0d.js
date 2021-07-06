@@ -919,10 +919,8 @@
         return n.ready = function() {
             var n, i, o, s = a.attr("data-wf-status"),
                 h = a.attr("data-wf-domain") || "";
-            /\.webflow\.io$/i.test(h) && u.hostname !== h && (s = !0), s && !c && (e = e || (n = t('<a class="w-webflow-badge"></a>').attr("href", "https://webflow.com?utm_campaign=brandjs"), i = t("<img>").attr("src", "https://d3e54v103j8qbb.cloudfront.net/img/webflow-badge-icon.f67cd735e3.svg").attr("alt", "").css({
-                marginRight: "8px",
-                width: "16px"
-            }), o = t("<img>").attr("src", "https://d1otoma47x30pg.cloudfront.net/img/webflow-badge-text.6faa6a38cd.svg").attr("alt", "Made in Webflow"), n.append(i, o), n[0]), d(), setTimeout(d, 500), t(r).off(l, f).on(l, f))
+            /\.webflow\.io$/i.test(h) && u.hostname !== h && (s = !0), s && !c && (e = e || (n = t('<a class=""></a>').attr("href", ""), i = t("<img>").attr("src", "").attr("alt", "").css({
+            }), o = t("<img>").attr("src", "").attr("alt", ""), n.append(i, o), n[0]), d(), setTimeout(d, 500), t(r).off(l, f).on(l, f))
         }, n
     })
 }, function(t, e, n) {
