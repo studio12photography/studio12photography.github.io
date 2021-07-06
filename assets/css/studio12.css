@@ -117,6 +117,21 @@ table{
 td,th{
 	padding:0
 }
+.w-button {
+  display: inline-block;
+  padding: 9px 15px;
+  background-color: #3898ec;
+  color: #fff;
+  border: 0;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius:0
+}
+
+input.w-button {
+  -webkit-appearance:button
+}
 @font-face{
 	font-family:webflow-icons;
 	src:url("data:application/x-font-ttf;
@@ -1879,20 +1894,6 @@ p{
 .brand-link{
 	text-decoration:none
 }
-.button-copy {
-  display: inline-block;
-  margin-right: 14px;
-  padding: 13px 23px;
-  border-radius: 3px;
-  background-color: #fff;
-  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.12);
-  -webkit-transition: background-color 300ms ease, box-shadow 300ms ease, color 300ms ease;
-  transition: background-color 300ms ease, box-shadow 300ms ease, color 300ms ease;
-  font-family: 'Roboto Slab', sans-serif;
-  color: #000;
-  text-align: center;
-  text-decoration: none;
-}
 .main-heading{
 	margin-top:0;
 	margin-bottom:20px;
@@ -2473,6 +2474,26 @@ p{
 		-webkit-flex-basis:100%;
 		-ms-flex-preferred-size:100%;
 		flex-basis:100%
+}
+.button-copy {
+  display: inline-block;
+  margin-top: 0;
+  margin-right: 14px;
+  padding: 13px 23px;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, .12);
+  -webkit-transition: background-color .3s, box-shadow .3s, color .3s;
+  transition: background-color .3s, box-shadow .3s, color .3s;
+  font-family: Gothic, sans-serif;
+  color: #000;
+  text-align: center;
+  text-decoration:none
+}
+
+.button-copy:hover {
+  background-color: #d9484a;
+  color:#fff
 }
 }
 @font-face {
